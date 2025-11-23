@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Product Market — Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="pm-header">
+    <h1 class="pm-title">Product Market</h1>
+    <div class="pm-controls">
+      <select id="categoryFilter" class="pm-select">
+        <option value="all">All categories</option>
+      </select>
+      <button id="viewOrdersBtn" class="pm-btn">My Orders</button>
+    </div>
+  </header>
+
+  <main class="pm-main">
+    <section class="pm-products" id="productList"></section>
+
+    <aside class="pm-sidebar">
+      <h2>Cart</h2>
+      <ul id="cartList" class="pm-cart-list"></ul>
+      <div class="pm-cart-total">Total: <span id="cartTotal">0.00</span> AZN</div>
+      <button id="checkoutBtn" class="pm-btn">Checkout</button>
+    </aside>
+  </main>
+
+  <!-- Modals -->
+  <div id="orderModal" class="pm-modal hidden">
+    <div class="pm-modal-content">
+      <button class="pm-close" id="closeModal">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="pm-footer">
+    <small>Demo product market — static site. Serve with a local static server for full functionality.</small>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

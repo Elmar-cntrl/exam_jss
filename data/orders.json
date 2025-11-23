@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ORD-demo-1",
+    "items": [
+      {
+        "id": "p1",
+        "name": "Fresh Apples",
+        "price": 2.5,
+        "qty": 2
+      }
+    ],
+    "total": 5.0,
+    "customer": {
+      "name": "Demo User",
+      "phone": "050000000",
+      "address": "Demo street"
+    },
+    "createdAt": "2025-11-19 12:00"
+  }
+]
