@@ -31,4 +31,9 @@ body{margin:0;background:var(--bg);color:#111}
 .pm-modal-content{background:var(--card);padding:20px;border-radius:12px;max-width:720px;width:100%;position:relative}
 .pm-close{position:absolute;right:12px;top:8px;background:none;border:none;font-size:24px;cursor:pointer}
 .pm-footer{padding:16px;text-align:center;color:var(--muted)}
+.pm-user {
+    font-weight: 600;
+    color: var(--accent);
+    margin-right: 10px;
+}
 @media(max-width:900px){.pm-main{grid-template-columns:1fr}}

@@ -1,4 +1,3 @@
-// src/components/createOrderForm.js
 export class OrderForm {
   constructor(cartItems, submitCallback){
     this.items = cartItems.map(i=>({id:i.id,name:i.name,price:i.price,qty:i.qty}));

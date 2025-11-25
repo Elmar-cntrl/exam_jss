@@ -7,15 +7,33 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <header class="pm-header">
+<header class="pm-header">
     <h1 class="pm-title">Product Market</h1>
+
     <div class="pm-controls">
-      <select id="categoryFilter" class="pm-select">
-        <option value="all">All categories</option>
-      </select>
-      <button id="viewOrdersBtn" class="pm-btn">My Orders</button>
+        <select id="categoryFilter" class="pm-select">
+            <option value="all">All categories</option>
+        </select>
+
+
+        <button id="viewOrdersBtn" class="pm-btn">My Orders</button>
+
+        <span id="userDisplay" class="pm-user"></span>
+
+        <button id="loginBtn" class="pm-btn">Login</button>
+        <button id="registerBtn" class="pm-btn">Register</button>
+        <button id="logoutBtn" class="pm-btn hidden">Logout</button>
     </div>
-  </header>
+</header>
+
+<!-- Auth Modal -->
+<div id="authModal" class="pm-modal hidden">
+    <div class="pm-modal-content">
+        <button class="pm-close" id="authClose">&times;</button>
+        <div id="authBody"></div>
+    </div>
+</div>
+
 
   <main class="pm-main">
     <section class="pm-products" id="productList"></section>

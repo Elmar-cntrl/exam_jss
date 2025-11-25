@@ -1,4 +1,3 @@
-// src/components/productCard.js
 export function renderProductCard(product, onAdd){
   const el = document.createElement('article');
   el.className = 'pm-card';
